@@ -1,0 +1,520 @@
+{
+  "title": "Escape Room",
+  "activationRadius": 25,
+  "theme": {},
+  "clues": [
+    {
+      "id": 1,
+      "title": "🎴 Pista 1 — O Truque de Magia",
+      "lat": 39.6036,
+      "lng": -8.4103,
+      "radius": 25,
+      "puzzle": {
+        "type": "steps",
+        "steps": [
+          {
+            "type": "multiple_choice",
+            "question": "No fundo do oceano, a Ariel tinha uma gruta secreta onde guardava os seus tesouros mais preciosos. Objetos do mundo humano que colecionava com todo o cuidado.\n\nHoje encontraste o primeiro tesouro escondido nessa gruta. Mas para o desbloquear, precisas de provar que és digna de o receber...\n\nEntre os tesouros da Ariel havia um baralho de cartas mágico. Pega numa carta. Qualquer uma. Olha bem para ela e guarda-a no coração.\n\nQual é o naipe da carta que a Ariel guardou para ti?",
+            "answer": "♦️",
+            "hint": "Deixa o teu coração escolher. ✨",
+            "options": [
+              "♠️",
+              "♥️",
+              "♦️",
+              "♣️"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "question": "E qual é o valor?",
+            "answer": "A",
+            "hint": "Começa pelo início. 🌟",
+            "options": [
+              "A",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "J",
+              "Q",
+              "K"
+            ]
+          }
+        ],
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "✨ Magia feita! A aventura começa agora.\n\nPrepara-te para reviver cada capítulo da tua vida, com as pessoas que te amam.",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": ""
+      }
+    },
+    {
+      "id": 2,
+      "title": "🏡 Pista 2 — O Grupo Casa",
+      "lat": 39.6039,
+      "lng": -8.41,
+      "radius": 25,
+      "puzzle": {
+        "type": "multiple_choice",
+        "question": "O teu porto seguro. As pessoas com quem acordas, dormes, ris e choras.\n\nQuais são os 3 elementos do teu grupo mais próximo em casa?",
+        "answer": "Mãe, Irmã e Pai",
+        "hint": "Os três pilares da tua vida em casa. 💛",
+        "maxAttempts": 3,
+        "options": [
+          "Mãe, Irmã e Pai",
+          "Mãe, Avó e Pai",
+          "Irmã, Primo e Mãe",
+          "Pai, Tio e Mãe"
+        ],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "💛 O teu grupo Casa. As pessoas que te viram crescer todos os dias.\n\nTêm uma mensagem especial para ti. 🎬",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": "Mensagem do Grupo Casa"
+      }
+    },
+    {
+      "id": 3,
+      "title": "🚲 Pista 3 — Os Primos",
+      "lat": 39.6042,
+      "lng": -8.409699999999999,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "Corridas de bicicleta, brincadeiras sem fim, aventuras que só vocês sabem.\n\nCom este grupo cresceste, brincaste, partilhaste tudo.\n\nDi-me: como se chama este grupo especial da tua infância? 🚲",
+        "answer": "os primos",
+        "hint": "São da família, mas também os melhores amigos da infância. 🌱",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "🚲 Os teus primos! A infância guarda os melhores segredos.\n\nVê o que têm para te dizer. 🎬",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": "Mensagem dos Primos"
+      }
+    },
+    {
+      "id": 4,
+      "title": "👨‍👩‍👧‍👦 Pista 4 — A Família",
+      "lat": 39.6045,
+      "lng": -8.4094,
+      "radius": 25,
+      "puzzle": {
+        "type": "multiple_choice",
+        "question": "A raiz de tudo. Os tios, a avó, os irmãos dos teus pais.\n\nQuem faz parte deste grupo de família alargada?\n\nEscolhe a opção correcta:",
+        "answer": "Tios, avó e irmãos dos pais",
+        "hint": "É toda a árvore genealógica! 🌳",
+        "maxAttempts": 3,
+        "options": [
+          "Tios, avó e irmãos dos pais",
+          "Primos, avô e padrinhos",
+          "Avós e bisavós",
+          "Tios e padrinhos apenas"
+        ],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "🌳 A tua família. A raiz que te sustenta sempre.\n\nTêm algo para te dizer. 🎬",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": "Mensagem da Família"
+      }
+    },
+    {
+      "id": 5,
+      "title": "💜 Pista 5 — Família Coração",
+      "lat": 39.6048,
+      "lng": -8.409099999999999,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "Não são família de sangue, mas foram sempre família do coração.\n\nAmigos dos teus pais que te andaram ao colo, que estiveram sempre, sempre lá.\n\nComo chamas a este grupo? 💜",
+        "answer": "família coração",
+        "hint": "São família... mas não pelo sangue. Pelo coração. 💜",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "💜 A tua Família Coração.\n\nEscolheram-te como família. E tu escolheste-os também. 🎬",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": "Mensagem da Família Coração"
+      }
+    },
+    {
+      "id": 6,
+      "title": "🎀 Pista 6 — Meninas do Colégio",
+      "lat": 39.6051,
+      "lng": -8.4088,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "Um colégio de freiras, anos de amizade, jantares que continuam até hoje.\n\nAté ao 9º ano, vocês foram inseparáveis.\n\nComo se chama este grupo? 🎀",
+        "answer": "meninas do colégio",
+        "hint": "É o nome com que ainda guardam o grupo no telemóvel. 📱",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "🎀 As Meninas do Colégio!\n\nAlgumas amizades são para sempre, mesmo que a vida nos leve para caminhos diferentes. 🎬",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": "Mensagem das Meninas do Colégio"
+      }
+    },
+    {
+      "id": 7,
+      "title": "🇧🇪 Pista 7 — A Bélgica",
+      "lat": 39.6054,
+      "lng": -8.4085,
+      "radius": 25,
+      "puzzle": {
+        "type": "numeric",
+        "question": "Foste estudar para um país diferente, criaste laços que atravessam fronteiras.\n\nQuantos meses estiveste na Bélgica? 🇧🇪",
+        "answer": "3",
+        "hint": "Não foi muito tempo, mas foi suficiente para criar uma grande relação. 💙",
+        "maxAttempts": 5,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "🇧🇪 Três meses que ficaram para sempre.\n\nA distância nunca foi obstáculo para esta amizade. 🎬",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": "Mensagem da Bélgica"
+      }
+    },
+    {
+      "id": 8,
+      "title": "😄 Pista 8 — O Grupo Especial",
+      "lat": 39.6057,
+      "lng": -8.408199999999999,
+      "radius": 25,
+      "puzzle": {
+        "type": "multiple_choice",
+        "question": "Este grupo tem uma coisa em comum: adoram-te, falam sobre tudo sem filtros e tens com eles uma relação incrível.\n\nComo defines melhor este grupo de rapazes?",
+        "answer": "Amigos com quem podes ser completamente tu mesma",
+        "hint": "Com eles não há tabus, há só muita gargalhada e honestidade. 😄",
+        "maxAttempts": 3,
+        "options": [
+          "Amigos com quem podes ser completamente tu mesma",
+          "Colegas do trabalho",
+          "Amigos do teatro",
+          "Amigos da universidade"
+        ],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "😄 Este grupo especial!\n\nAs amizades onde podes ser 100% tu mesma são as mais raras. 🎬",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": "Mensagem do Grupo Especial"
+      }
+    },
+    {
+      "id": 9,
+      "title": "🏕️ Pista 9 — A Colónia",
+      "lat": 39.606,
+      "lng": -8.4079,
+      "radius": 25,
+      "puzzle": {
+        "type": "sequence",
+        "question": "Tu eras uma animadora incrível na colónia de férias para crianças.\n\nOrdena as actividades que fazias com elas, da mais criativa para a mais aventureira:",
+        "answer": [
+          "Criar imaginários e histórias à noite",
+          "Compor canções para os meninos",
+          "Animar jogos e brincadeiras",
+          "Ir com eles para a praia"
+        ],
+        "hint": "Começa pela tua capacidade mais especial: a de criar. 🌟",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [
+          "Criar imaginários e histórias à noite",
+          "Compor canções para os meninos",
+          "Animar jogos e brincadeiras",
+          "Ir com eles para a praia"
+        ],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "🏕️ A Criadora! A rapariga que dava vida à imaginação de crianças desfavorecidas.\n\nIsso define quem és. 🎬",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": "Mensagem da Colónia"
+      }
+    },
+    {
+      "id": 10,
+      "title": "💑 Pista 10 — O Namorado",
+      "lat": 39.6063,
+      "lng": -8.407599999999999,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "Ainda estavas no secundário quando conheceste alguém especial.\n\nFoi numa viagem, num lugar único, cheio de silêncio e espiritualidade.\n\nOnde foi esse encontro que mudou tudo? 💑",
+        "answer": "taizé",
+        "hint": "É uma comunidade em França, conhecida pela música e pela espiritualidade. 🕊️",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "🕊️ Taizé, França. Onde tudo começou.\n\nAlgumas histórias começam nos sítios mais improváveis... e ficam para sempre. 💑🎬",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": "Uma mensagem especial"
+      }
+    },
+    {
+      "id": 11,
+      "title": "🎉 Pista 11 — Grupo de Jovens",
+      "lat": 39.6066,
+      "lng": -8.4073,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "Através do teu namorado conheceste um grupo especial.\n\nJuntos fizeram uma festa inesquecível, em honra de um santo popular de Lisboa.\n\nQue festa foi essa? 🎉",
+        "answer": "santo antónio",
+        "hint": "É em Junho, em Lisboa. Sardinha, manjerico e muito arraial! 🐟",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "🎉 A Festa de Santo António!\n\nEste grupo trouxe ainda mais alegria à tua vida. 🎬",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": "Mensagem do Grupo de Jovens"
+      }
+    },
+    {
+      "id": 12,
+      "title": "🏠 Pista 12 — A Família Dele",
+      "lat": 39.6069,
+      "lng": -8.407,
+      "radius": 25,
+      "puzzle": {
+        "type": "multiple_choice",
+        "question": "Quando entras na vida de alguém, entras também na família deles.\n\nO que passaste a ter ao conhecer a família do teu namorado?",
+        "answer": "Uma nova família que te acolheu",
+        "hint": "Não é só um namorado — é uma família inteira que te abriu as portas. 🏠",
+        "maxAttempts": 3,
+        "options": [
+          "Uma nova família que te acolheu",
+          "Novos colegas de trabalho",
+          "Novas amigas do colégio",
+          "Um novo grupo de teatro"
+        ],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "🏠 A família dele passou a ser também um pouco a tua.\n\nEles têm uma mensagem para ti. 🎬",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": "Mensagem da Família dele"
+      }
+    },
+    {
+      "id": 13,
+      "title": "⚖️ Pista 13 — A Universidade",
+      "lat": 39.6072,
+      "lng": -8.406699999999999,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "Na universidade estudaste um curso nobre, ligado à justiça e às leis.\n\nFizeste um grande amigo nessa altura, alguém com quem partilhaste horas de estudo.\n\nQue curso estudaste? ⚖️",
+        "answer": "direito",
+        "hint": "É o curso que defende direitos e aplica a lei. ⚖️",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "⚖️ Direito! E com ele vieram amizades para a vida.\n\nTêm uma mensagem especial para ti. 🎬",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": "Mensagem da Universidade"
+      }
+    },
+    {
+      "id": 14,
+      "title": "🎭 Pista 14 — O Teatro Musical",
+      "lat": 39.6075,
+      "lng": -8.4064,
+      "radius": 25,
+      "puzzle": {
+        "type": "matching",
+        "question": "O teatro musical sempre foi parte de ti.\n\nLiga cada peça ao seu universo temático: 🎭",
+        "answer": "",
+        "hint": "Uma é sobre freiras cantoras, a outra sobre chocolate e fábricas mágicas. 🍫",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": [
+          {
+            "left": "Sister Act",
+            "right": "Freiras e gospel"
+          },
+          {
+            "left": "Charlie e a Fábrica de Chocolate",
+            "right": "Willy Wonka e magia"
+          },
+          {
+            "left": "Teatro Musical",
+            "right": "A tua paixão de sempre"
+          }
+        ]
+      },
+      "reveal": {
+        "text": "🎭 A actriz, a cantora, a criadora!\n\nO palco sempre soube quem eras. 🎬",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": "Mensagem do Teatro"
+      }
+    },
+    {
+      "id": 15,
+      "title": "🌙 Pista 15 — Crescimento Pessoal",
+      "lat": 39.6078,
+      "lng": -8.406099999999999,
+      "radius": 25,
+      "puzzle": {
+        "type": "multiple_choice",
+        "question": "Uma fase de descoberta interior, de olhar para dentro e para as estrelas.\n\nQual destas não faz parte da tua jornada de autoconhecimento?",
+        "answer": "Karaté",
+        "hint": "Pensa nas coisas que te fazem olhar para dentro, não para fora. 🌙",
+        "maxAttempts": 3,
+        "options": [
+          "Astrologia",
+          "Desenvolvimento pessoal",
+          "Autoconhecimento",
+          "Karaté"
+        ],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "🌙 A Alexandra que olha para as estrelas e para dentro de si mesma.\n\nEsta fase trouxe uma mensagem especial. 🎬",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": "Mensagem do Crescimento Pessoal"
+      }
+    },
+    {
+      "id": 16,
+      "title": "💫 Pista 16 — Novas Intimidades",
+      "lat": 39.6081,
+      "lng": -8.4058,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "Com o tempo o círculo cresceu. Os namorados dos teus primos tornaram-se também parte da tua história.\n\nComo se chama este processo bonito de crescer juntos? 💫",
+        "answer": "novas amizades",
+        "hint": "É quando o círculo se expande e os desconhecidos se tornam próximos. 💫",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "💫 O círculo que cresce!\n\nNovas pessoas, novas histórias, novas alegrias. 🎬",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": "Mensagem das Novas Intimidades"
+      }
+    },
+    {
+      "id": 17,
+      "title": "💼 Pista 17 — O Trabalho",
+      "lat": 39.6084,
+      "lng": -8.4055,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "O último capítulo desta aventura. O trabalho trouxe-te novas amizades, novos mundos.\n\nQual é a última coisa que o trabalho te deu, além de experiência profissional?",
+        "answer": "novos amigos",
+        "hint": "Não é dinheiro nem títulos — é algo muito mais valioso. 💛",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "💼 Novos amigos! Porque onde quer que vás, Alexandra, as pessoas apaixonam-se por ti.\n\nE têm uma mensagem final para ti. 🎬",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": "Mensagem do Trabalho"
+      }
+    }
+  ],
+  "screens": [
+    {
+      "id": 100,
+      "title": "Introdução",
+      "position": "before:0",
+      "heading": "🧜‍♀️ Alexandra",
+      "text": "Num mundo distante, existia uma princesa que sonhava com o mundo lá em cima, \"No Palco\".\n\nEla colecionava memórias, histórias e pessoas como a Ariel colecionava tesouros do fundo do mar.\n\nHoje, vais mergulhar na tua própria história. Cada enigma que resolves desbloqueia uma memória que vive no teu coração.\n\nEstás pronta, princesa?",
+      "mediaType": "none",
+      "mediaSrc": "",
+      "mediaCaption": "",
+      "btnLabel": "Começar a Aventura ▶",
+      "audioTracks": [
+        {
+          "src": "",
+          "loop": false,
+          "volume": 1
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "title": "Transição — Após Truque de Magia",
+      "position": "after:0",
+      "heading": "✨ A Magia é Real",
+      "text": "Vês? A magia existe.\n\nE a maior magia da tua vida são as pessoas que te rodeiam.\n\nCada pista que vais resolver vai revelar um grupo dessas pessoas.\n\nPrepara os lenços. Pode ser uma aventura emocionante. 💛",
+      "mediaType": "none",
+      "mediaSrc": "",
+      "mediaCaption": "",
+      "btnLabel": "Ver o Grupo Casa ▶"
+    },
+    {
+      "id": 102,
+      "title": "Conclusão Final",
+      "position": "after-all",
+      "heading": "🏆 A Alexandra — Uma Vida de Amor",
+      "text": "Chegaste ao fim desta aventura.\n\nMas esta não é uma história que termina — é uma história que continua a ser escrita todos os dias.\n\n17 grupos. Centenas de pessoas. Uma vida construída com amor, autenticidade e muita alegria.\n\nIsso és tu, Alexandra.\n\n🧜‍♀️ A princesa que não precisava de um mundo diferente — porque o mundo à sua volta já era mágico.\n\nCom todo o amor do mundo,\nO teu namorado 💑",
+      "mediaType": "none",
+      "mediaSrc": "",
+      "mediaCaption": "",
+      "btnLabel": "🎉 Obrigada por esta aventura!"
+    }
+  ]
+}

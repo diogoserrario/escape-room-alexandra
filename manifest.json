@@ -1,0 +1,21 @@
+{
+  "name": "Escape Room",
+  "short_name": "Escape Room",
+  "description": "Jogo de escape room ao ar livre com GPS e puzzles",
+  "start_url": "./escape-room-player.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f0f1a",
+  "theme_color": "#7c3aed",
+  "lang": "pt",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["games", "entertainment"],
+  "screenshots": []
+}
