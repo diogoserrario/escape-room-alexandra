@@ -1,0 +1,474 @@
+{
+  "title": "Escape Room",
+  "activationRadius": 25,
+  "theme": {},
+  "clues": [
+    {
+      "id": 1,
+      "title": "A Gruta dos Tesouros",
+      "lat": 39.75788811117462,
+      "lng": -8.799086431601516,
+      "radius": 25,
+      "puzzle": {
+        "type": "steps",
+        "question": "",
+        "steps": [
+          {
+            "type": "multiple_choice",
+            "question": "No fundo do oceano, a Ariel tinha uma gruta secreta onde guardava os seus tesouros mais preciosos. Objetos do mundo humano que colecionava com todo o cuidado.\n\nHoje encontraste o primeiro tesouro escondido nessa gruta. Mas para o desbloquear, precisas de provar que és digna de o receber...\n\nEntre os tesouros da Ariel havia um baralho de cartas mágico. Pega numa carta. Qualquer uma. Olha bem para ela e guarda-a no coração.\n\nQual é o naipe da carta que a Ariel guardou para ti?",
+            "answer": "♦️",
+            "hint": "Deixa o teu coração escolher. ✨",
+            "options": [
+              "♠️",
+              "♥️",
+              "♦️",
+              "♣️"
+            ]
+          },
+          {
+            "type": "multiple_choice",
+            "question": "E qual é o valor?",
+            "answer": "A",
+            "hint": "",
+            "options": [
+              "A",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "J",
+              "Q",
+              "K"
+            ]
+          }
+        ],
+        "options": [],
+        "items": [],
+        "pairs": [],
+        "hint": "",
+        "maxAttempts": 0
+      },
+      "reveal": {
+        "text": "A aventura começa agora.",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": ""
+      }
+    },
+    {
+      "id": 2,
+      "title": "O Rei Tritão e o Reino",
+      "lat": 39.75800461176309,
+      "lng": -8.79868409998649,
+      "radius": 25,
+      "puzzle": {
+        "type": "numeric",
+        "question": "Todo o reino tem uma âncora, a Ariel tinha o Tritão, tu tens algo ainda mais forte, as pessoas que te viram crescer.\n\nO Tritão governava o oceano com o seu tridente, mas o verdadeiro poder de um reino não está nas armas, está nas raízes. As raízes do teu reino estão marcadas no tempo, em quatro momentos muito especiais. Encontra esses momentos e soma-os.",
+        "answer": "7934",
+        "hint": "São quatro momentos. E um deles és tu.",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "As pessoas que te viram crescer todos os dias.",
+        "mediaType": "youtube",
+        "mediaSrc": "https://www.youtube.com/watch?v=xnrX21u2-D0",
+        "mediaCaption": ""
+      }
+    },
+    {
+      "id": 3,
+      "title": "As Irmãs Sereias",
+      "lat": 39.75784841844168,
+      "lng": -8.798625762118988,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "A Ariel não estava sozinha no oceano. Tinha irmãs, cada uma com o seu nome, a sua personalidade, a sua história. Juntas cresceram, cantaram e partiram para mundos diferentes, mas o laço nunca se quebrou.\n\nAs tuas irmãs sereias também têm um nome. Não o nome do grupo, mas o de cada uma delas. Junta a primeira letra de cada nome, por ordem alfabética, e terás a chave que abre esta porta.",
+        "answer": "ABCJMNRT",
+        "hint": "São oito. E todas têm um lugar especial no teu coração.",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "Algumas amizades resistem a tudo.",
+        "mediaType": "youtube",
+        "mediaSrc": "https://www.youtube.com/shorts/TOyNmrffeyo",
+        "mediaCaption": ""
+      }
+    },
+    {
+      "id": 4,
+      "title": "O Fundo do Oceano",
+      "lat": 39.75768,
+      "lng": -8.7992,
+      "radius": 25,
+      "puzzle": {
+        "type": "numeric",
+        "question": "O oceano é vasto e as suas criaturas vivem espalhadas por territórios diferentes, mas todas fazem parte do mesmo mar. A tua família alargada é assim, cada uma no seu canto, mas todas ligadas pelo mesmo sangue e pelo mesmo amor.\n\nCada território tem um código. Encontra o código de cada lugar onde a tua família vive e soma os primeiros dois dígitos de cada código como um número inteiro. Por exemplo, se o código fosse 1234, usarias o 12. Faz isso para cada território e soma todos.",
+        "answer": "193",
+        "hint": "São quatro territórios. Cada um contribui com dois dígitos para a soma.",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "A raiz que te sustenta sempre.",
+        "mediaType": "youtube",
+        "mediaSrc": "https://www.youtube.com/watch?v=dStfQqJ0lCg",
+        "mediaCaption": ""
+      }
+    },
+    {
+      "id": 5,
+      "title": "Os Filhos do Mesmo Reino",
+      "lat": 39.75755,
+      "lng": -8.7989,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "No mesmo reino crescem criaturas muito diferentes. Umas são guerreiras, outras fogem a correr. No teu reino havia um primo que dominava as artes do combate e adorava arrastar os outros para a luta. Tu tinhas uma técnica infalível, antes mesmo de começar, já estavas no chão.\n\nComo se chamava o desporto que ele tanto adorava e tu tanto evitavas?",
+        "answer": "wrestling",
+        "hint": "É um desporto de combate. E a tua estratégia era render-te antes de começar.",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "A infância guarda os melhores segredos.",
+        "mediaType": "youtube",
+        "mediaSrc": "https://www.youtube.com/watch?v=K3hwgVWo4jY",
+        "mediaCaption": ""
+      }
+    },
+    {
+      "id": 6,
+      "title": "Sebastian e Linguado",
+      "lat": 39.75762,
+      "lng": -8.7984,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "Sebastião e Linguado não eram família da Ariel de sangue, mas estavam sempre ao seu lado desde o primeiro dia. A tua família coração é assim, pessoas que escolheram estar lá, que andaram contigo ao colo e que cresceram contigo sem serem os teus pais.\n\nEste grupo partilha uma ligação especial, um lugar que os uniu para sempre. Uma sigla, um número, uma história de serviço e de honra. Sabes qual é?",
+        "answer": "RA4",
+        "hint": "É um regimento. E o número é o quatro.",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "Escolheram-te e tu escolheste-os.",
+        "mediaType": "youtube",
+        "mediaSrc": "https://www.youtube.com/watch?v=CmUjiUweCRU",
+        "mediaCaption": ""
+      }
+    },
+    {
+      "id": 7,
+      "title": "À Superfície",
+      "lat": 39.7581,
+      "lng": -8.7983,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "A Ariel sempre soube que o oceano era vasto, que havia mundos para além do seu reino. Partir foi assustador, mas foi também a maior aventura.\n\nTu também partiste e foste viver para outro reino durante alguns meses.\n\nQual era o nome desse reino?",
+        "answer": "Bélgica",
+        "hint": "É um país no coração da Europa. E a capital é Bruxelas.",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "Poucos meses que ficaram para sempre.",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": ""
+      }
+    },
+    {
+      "id": 8,
+      "title": "Os Humanos Sem Filtro",
+      "lat": 39.75825,
+      "lng": -8.7988,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "Quando a Ariel chegou ao mundo humano ficou fascinada com tudo, com os objetos, com os costumes, com as conversas. Os humanos falavam de tudo sem vergonha, sem filtros, com uma honestidade que a encantou.\n\nTu tens um grupo assim, rapazes com quem podes ser completamente tu mesma, onde não há tabus, onde tudo se diz e tudo se ri. Há uma palavra que define melhor do que qualquer outra o tema favorito das vossas conversas. Qual é?",
+        "answer": "sexo",
+        "hint": "É o tema que nunca falta quando estão todos juntos.",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "As amizades onde podes ser completamente tu mesma são as mais raras.",
+        "mediaType": "youtube",
+        "mediaSrc": "https://www.youtube.com/shorts/cqeLlHnzTss",
+        "mediaCaption": ""
+      }
+    },
+    {
+      "id": 9,
+      "title": "Criar Mundos Imaginários",
+      "lat": 39.75815,
+      "lng": -8.7994,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "A Ariel sempre quis explorar o mundo lá em cima, criar histórias, dar vida a personagens que nunca tinham existido. Tu fizeste isso mesmo, criaste mundos imaginários com personagens imaginárias.\n\nOnde é que acontecia a magia?",
+        "answer": "Casa Amarela",
+        "hint": "Fecha os olhos e volta lá. O nome está na fachada.",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "A rapariga que dava vida à imaginação de outras crianças.",
+        "mediaType": "youtube",
+        "mediaSrc": "https://www.youtube.com/shorts/-9Rsawx4XQg",
+        "mediaCaption": ""
+      }
+    },
+    {
+      "id": 10,
+      "title": "O Príncipe Eric",
+      "lat": 39.75745,
+      "lng": -8.7995,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "A Ariel apaixonou-se pelo Príncipe Eric quando o ouviu cantar. Foi a voz que a prendeu, a música que atravessou o oceano e chegou ao seu coração (ainda hoje se diz que é mito).\n\nTu também te apaixonaste num lugar cheio de música, num lugar especial em França onde as noites eram passadas a cantar e a rir. Que lugar é esse?",
+        "answer": "oyak",
+        "hint": "É em França. E à noite havia muita música e muita alegria.",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "Algumas histórias começam nos sítios mais improváveis e ficam para sempre.",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": ""
+      }
+    },
+    {
+      "id": 11,
+      "title": "A Festa na Aldeia",
+      "lat": 39.75735,
+      "lng": -8.7986,
+      "radius": 25,
+      "puzzle": {
+        "type": "numeric",
+        "question": "A Ariel foi introduzida num mundo novo, cheio de pessoas especiais que partilhavam grandes momentos e ensinamentos de vida.\n\nTu também foste apresentada a um grupo especial, através do teu Eric. Um grupo onde se criaram laços fortes e memórias que ficam.\n\nTodos os anos celebravam uma pequena festa juntos. Em que dia era essa festa? Responde no formato ddmm (exemplo: 2504)",
+        "answer": "1306",
+        "hint": "É em junho. O santo tem o mesmo nome que um dos Reis Magos.",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "Um grupo que te trouxe grandes momentos e ensinamentos.",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": ""
+      }
+    },
+    {
+      "id": 12,
+      "title": "Um Novo Reino",
+      "lat": 39.7575,
+      "lng": -8.798,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "A Ariel chegou a um novo reino e teve de se apresentar à família do Príncipe Eric. Mas tu fizeste isso à tua maneira, com muito mais estilo.\n\nNo Natal, gravaram videoclipes com músicas da Rádio Comercial e apresentaram-nos à família. Em um desses videoclipes havia um trio inesquecível.\n\nComo se chamava esse trio?",
+        "answer": "os pastores",
+        "hint": "Era Natal. E havia três deles.",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "Entraste na vida dele e eles abriram-te as portas.",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": ""
+      }
+    },
+    {
+      "id": 13,
+      "title": "A Voz que Não Se Perde",
+      "lat": 39.75835,
+      "lng": -8.7982,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "A Ariel tinha uma voz única, inconfundível. Mesmo quando a perdeu, ela nunca deixou de ser ela.\n\nTu também encontraste o teu caminho num mundo de palavras, argumentos e justiça. Na universidade, num curso que exige rigor, dedicação e muito estudo.\n\nFizeste amigos para a vida nessa altura, pessoas que te conheceram numa versão ainda mais jovem de ti.\n\nNa aula de que professor conheceste o teu melhor amigo?",
+        "answer": "Pinto Bronze",
+        "hint": "É um professor de Direito. O nome tem duas partes.",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "Com ela vieram amizades para a vida.",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": ""
+      }
+    },
+    {
+      "id": 14,
+      "title": "Part of Your World",
+      "lat": 39.75845,
+      "lng": -8.799,
+      "radius": 25,
+      "puzzle": {
+        "type": "matching",
+        "question": "A Ariel sempre sonhou com o mundo lá em cima, com os palcos, as luzes e a música que faz o coração voar. Para ela, o mundo humano era mágico precisamente por isso, pela arte, pela expressão, pela voz que atravessa uma sala e chega a toda a gente.\n\nTu viveste isso, não apenas como espectadora, mas como protagonista. Subiste a palcos, vestiste personagens, cantaste com tudo o que tinhas.\n\nCada espetáculo ficou marcado num sítio diferente, liga cada um ao palco onde aconteceu:",
+        "answer": "",
+        "hint": "Cada espetáculo tem o seu palco. E tu estavas em todos eles.",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": [
+          {
+            "left": "Charlie e a Fábrica de Chocolate",
+            "right": "M Studio"
+          },
+          {
+            "left": "Sister Act I",
+            "right": "Academia da Broadway"
+          },
+          {
+            "left": "Annie",
+            "right": "Rochschool"
+          },
+          {
+            "left": "Sister Act II",
+            "right": "Rochschool"
+          }
+        ]
+      },
+      "reveal": {
+        "text": "O palco sempre soube quem eras.",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": ""
+      }
+    },
+    {
+      "id": 15,
+      "title": "O Mundo Lá em Cima",
+      "lat": 39.7583,
+      "lng": -8.7997,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "A Ariel saiu do fundo do oceano e descobriu um mundo completamente novo. Para se encontrar teve de olhar para fora, explorar, questionar tudo o que conhecia.\n\nTu também passaste por uma fase assim, de olhar para dentro e para o que está lá em cima, de perceber quem és e o que te move.\n\nPara onde olhaste para saberes mais sobre ti própria?",
+        "answer": "estrelas",
+        "hint": "Estão no céu. E dizem muito sobre quem somos.",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "Uma fase que te trouxe mais perto de ti mesma.",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": ""
+      }
+    },
+    {
+      "id": 16,
+      "title": "Dois Mundos",
+      "lat": 39.7572,
+      "lng": -8.7998,
+      "radius": 25,
+      "puzzle": {
+        "type": "text",
+        "question": "A Ariel chegou ao mundo humano e mergulhou nele de cabeça. Aprendeu, cresceu, e tornou-se parte de algo maior do que ela própria.\n\nTu também deste esse passo e entraste num mundo novo, com uma energia diferente, uma identidade que te conquistou logo desde o primeiro dia. Aprendeste a atrair o que querias como por magia.\n\nQue cor define esse novo mundo?",
+        "answer": "purple",
+        "hint": "Está nas tuas unhas. E nos post-its da tua parede.",
+        "maxAttempts": 0,
+        "options": [],
+        "items": [],
+        "pairs": []
+      },
+      "reveal": {
+        "text": "Porque onde quer que vás, as pessoas apaixonam-se por ti.",
+        "mediaType": "none",
+        "mediaSrc": "",
+        "mediaCaption": ""
+      }
+    }
+  ],
+  "screens": [
+    {
+      "id": 100,
+      "title": "Introdução",
+      "position": "before:0",
+      "heading": "🧜‍♀️ Alexandra",
+      "text": "Num mundo distante, existia uma princesa que sonhava com o mundo lá em cima, \"No Palco\".\n\nEla colecionava memórias, histórias e pessoas como a Ariel colecionava tesouros do fundo do mar.\n\nHoje, vais mergulhar na tua própria história. Cada enigma que resolves desbloqueia uma  memória de que vive no teu coração.\n\nEstás pronta, princesa?",
+      "mediaType": "none",
+      "mediaSrc": "",
+      "mediaCaption": "",
+      "btnLabel": "Começar a Aventura ▶",
+      "audioTracks": []
+    },
+    {
+      "id": 100,
+      "title": "Introdução — Vídeo",
+      "position": "before:0",
+      "heading": "",
+      "text": "",
+      "mediaType": "youtube",
+      "mediaSrc": "https://www.youtube.com/watch?v=wegy0lT5LgI&list=RDwegy0lT5LgI&start_radio=1",
+      "mediaCaption": "",
+      "btnLabel": "Continuar ▶",
+      "audioTracks": []
+    },
+    {
+      "id": 101,
+      "title": "Transição — Após Truque de Magia",
+      "position": "after:0",
+      "heading": "✨ A Magia é Real",
+      "text": "Vês? A magia existe.\n\nE a maior magia da tua vida são as pessoas que te rodeiam.\n\nPrepara os lenços, vai ser uma aventura emocionante!",
+      "mediaType": "none",
+      "mediaSrc": "",
+      "mediaCaption": "",
+      "btnLabel": "Ver o Grupo Casa ▶"
+    },
+    {
+      "id": 102,
+      "title": "Conclusão Final",
+      "position": "after-all",
+      "heading": "🏆 A Alexandra — Uma Vida de Amor",
+      "text": "Chegaste ao fim desta aventura!\n\nMas esta não é uma história que termina, na verdade, é uma história que continua a ser escrita todos os dias. Uma história de amor, autenticidade e muita alegria onde \"O Palco\" faz parte da realidade da tua vida interpretada por Ariel dando vida à grande Artista Alexandra Balau.\n\nNa verdade, recebeste dezenas de mensagens dos teus fãs. Todos eles reconhecem em ti a artista que encanta com a voz e inspira com o coração.\n\nCom todo o amor do mundo,\nDe todos nós que te Amamos",
+      "mediaType": "none",
+      "mediaSrc": "",
+      "mediaCaption": "",
+      "btnLabel": "Continuar ▶"
+    }
+  ]
+}
