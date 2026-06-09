@@ -1,8 +1,11 @@
-const CACHE_NAME = 'escape-room-v2';
+const CACHE_NAME = 'escape-room-v4';
 const ASSETS = [
   './escape-room-player.html',
+  './escape-room-config.json',
   './manifest.json',
-  './icon.svg'
+  './icon-192.png',
+  './icon-512.png',
+  './1405.jpg'
 ];
 
 // Instalar — guarda ficheiros em cache
@@ -25,32 +28,21 @@ self.addEventListener('activate', e => {
   );
 });
 
-// Fetch — serve do cache se offline, rede se online
+// Fetch — stale-while-revalidate: serve cache imediatamente, actualiza em background
 self.addEventListener('fetch', e => {
-  // Só interceptar requests do mesmo domínio
   if (!e.request.url.startsWith(self.location.origin)) return;
 
   e.respondWith(
     caches.match(e.request).then(cached => {
-      if (cached) {
-        // Serve cache E actualiza em background (stale-while-revalidate)
-        const fetchPromise = fetch(e.request).then(response => {
-          if (response && response.status === 200) {
-            const clone = response.clone();
-            caches.open(CACHE_NAME).then(cache => cache.put(e.request, clone));
-          }
-          return response;
-        }).catch(() => cached);
-        return cached;
-      }
-      // Não está em cache — vai à rede
-      return fetch(e.request).then(response => {
-        if (!response || response.status !== 200) return response;
-        const clone = response.clone();
-        caches.open(CACHE_NAME).then(cache => cache.put(e.request, clone));
+      const fetchPromise = fetch(e.request).then(response => {
+        if (response && response.status === 200) {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(e.request, clone));
+        }
         return response;
-      }).catch(() => {
-        // Offline e não está em cache
+      }).catch(() => cached);
+
+      return cached || fetchPromise.catch(() => {
         if (e.request.destination === 'document') {
           return caches.match('./escape-room-player.html');
         }

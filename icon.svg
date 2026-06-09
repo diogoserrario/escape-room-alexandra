@@ -1,18 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <!-- Background -->
-  <rect width="512" height="512" rx="100" fill="#0f0f1a"/>
-  <!-- Outer glow ring -->
-  <circle cx="256" cy="256" r="200" fill="none" stroke="#7c3aed" stroke-width="8" opacity="0.3"/>
-  <!-- Map shape -->
+  <!-- Background — oceano fundo -->
+  <rect width="512" height="512" rx="100" fill="#03111e"/>
+  <!-- Gradiente radial tipo bioluminescência -->
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.15"/>
+    <stop offset="100%" stop-color="#03111e" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="512" height="512" rx="100" fill="url(#glow)"/>
+  <!-- Anel exterior -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#0ea5e9" stroke-width="6" opacity="0.25"/>
+  <!-- Mapa estilizado -->
   <path d="M160 180 L200 160 L256 185 L312 155 L352 175 L352 340 L312 320 L256 350 L200 325 L160 345 Z"
-        fill="none" stroke="#a78bfa" stroke-width="5" stroke-linejoin="round" opacity="0.6"/>
-  <!-- Map pin -->
-  <circle cx="256" cy="235" r="28" fill="#7c3aed"/>
-  <circle cx="256" cy="235" r="14" fill="#0f0f1a"/>
-  <line x1="256" y1="263" x2="256" y2="295" stroke="#7c3aed" stroke-width="6" stroke-linecap="round"/>
-  <!-- Magnifier glass -->
-  <circle cx="330" cy="310" r="44" fill="none" stroke="#4ade80" stroke-width="10"/>
-  <line x1="362" y1="342" x2="395" y2="375" stroke="#4ade80" stroke-width="12" stroke-linecap="round"/>
-  <!-- Question mark inside magnifier -->
-  <text x="330" y="325" text-anchor="middle" font-family="Arial,sans-serif" font-size="36" font-weight="bold" fill="#4ade80">?</text>
+        fill="none" stroke="#7dd3fc" stroke-width="5" stroke-linejoin="round" opacity="0.5"/>
+  <!-- Pin do mapa -->
+  <circle cx="256" cy="230" r="28" fill="#0ea5e9"/>
+  <circle cx="256" cy="230" r="12" fill="#03111e"/>
+  <line x1="256" y1="258" x2="256" y2="292" stroke="#0ea5e9" stroke-width="6" stroke-linecap="round"/>
+  <!-- Lupa -->
+  <circle cx="330" cy="310" r="44" fill="none" stroke="#34d399" stroke-width="10"/>
+  <line x1="362" y1="342" x2="395" y2="375" stroke="#34d399" stroke-width="12" stroke-linecap="round"/>
+  <!-- 🧜 dentro da lupa -->
+  <text x="330" y="326" text-anchor="middle" font-family="Arial,sans-serif" font-size="38" fill="#34d399">🧜</text>
 </svg>
