@@ -1,7 +1,6 @@
-const CACHE_NAME = 'escape-room-v4';
+const CACHE_NAME = 'escape-room-v5';
 const ASSETS = [
   './escape-room-player.html',
-  './escape-room-config.json',
   './manifest.json',
   './icon-192.png',
   './icon-512.png',
@@ -17,36 +16,26 @@ self.addEventListener('install', e => {
   );
 });
 
-// Activar — limpa caches antigas
+// Activar — limpa TODAS as caches antigas e toma controlo imediatamente
 self.addEventListener('activate', e => {
   e.waitUntil(
     caches.keys().then(keys =>
-      Promise.all(
-        keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k))
-      )
+      Promise.all(keys.map(k => caches.delete(k)))
     ).then(() => self.clients.claim())
   );
 });
 
-// Fetch — stale-while-revalidate: serve cache imediatamente, actualiza em background
+// Fetch — network first, fallback to cache
 self.addEventListener('fetch', e => {
   if (!e.request.url.startsWith(self.location.origin)) return;
 
   e.respondWith(
-    caches.match(e.request).then(cached => {
-      const fetchPromise = fetch(e.request).then(response => {
-        if (response && response.status === 200) {
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(e.request, clone));
-        }
-        return response;
-      }).catch(() => cached);
-
-      return cached || fetchPromise.catch(() => {
-        if (e.request.destination === 'document') {
-          return caches.match('./escape-room-player.html');
-        }
-      });
-    })
+    fetch(e.request).then(response => {
+      if (response && response.status === 200) {
+        const clone = response.clone();
+        caches.open(CACHE_NAME).then(cache => cache.put(e.request, clone));
+      }
+      return response;
+    }).catch(() => caches.match(e.request))
   );
 });
