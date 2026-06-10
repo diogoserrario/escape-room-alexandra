@@ -213,6 +213,7 @@
     .reveal-media img{width:100%;display:block;border-radius:12px}
     .reveal-media video{width:100%;display:block;border-radius:12px}
     .reveal-media iframe{width:100%;aspect-ratio:16/9;border:none;border-radius:12px;display:block}
+    .reveal-media iframe.short{aspect-ratio:9/16;max-height:60vh;margin:0 auto}
     .reveal-caption{font-size:.75rem;color:var(--muted);padding:7px 4px;text-align:center}
 
     /* COMPLETION */
@@ -280,7 +281,8 @@
     .po-reveal-text{font-size:.9rem;color:var(--text);line-height:1.7;margin-bottom:12px;white-space:pre-wrap}
     .po-reveal-media{border-radius:12px;overflow:hidden;margin-bottom:10px}
     .po-reveal-media img{width:100%;display:block}
-    .po-reveal-media iframe{width:100%;aspect-ratio:16/9;border:none}
+    .po-reveal-media iframe{width:100%;aspect-ratio:16/9;border:none;display:block}
+    .po-reveal-media iframe.short{aspect-ratio:9/16;max-height:60vh;margin:0 auto}
     .po-reveal-media video{width:100%;display:block}
     .po-reveal-caption{font-size:.75rem;color:var(--muted);margin-bottom:12px}
     .po-next-btn{width:100%;background:var(--accent);color:#fff;border:none;border-radius:12px;padding:14px;font-size:1rem;font-weight:700;cursor:pointer;font-family:inherit;margin-top:8px;transition:.2s}
@@ -1442,7 +1444,6 @@ function resetGame(){ try{ stopAllAudio(); }catch(e){} if(globalMusic){ globalMu
 const FINAL_VIDEO_URL = 'https://www.youtube.com/watch?v=TJvAw-2aN5c';
 
 function showFinalVideo(){
-  // Esconde completion, mostra ecrã final
   const comp = document.getElementById('completion');
   if(comp) comp.classList.remove('show');
   const screen = document.getElementById('final-video-screen');
@@ -1452,30 +1453,11 @@ function showFinalVideo(){
   const container = document.getElementById('final-video-container');
   if(!container) return;
 
-  if(!FINAL_VIDEO_URL){
-    // Ainda sem link — mostra placeholder
-    return;
-  }
+  if(!FINAL_VIDEO_URL) return;
 
-  // Extrai video ID (suporta youtube.com/watch?v= e youtu.be/ e shorts/)
-  let videoId = null;
-  const mWatch = FINAL_VIDEO_URL.match(/[?&]v=([^&#]+)/);
-  const mShort = FINAL_VIDEO_URL.match(/shorts\/([^/?&#]+)/);
-  const mYtBe  = FINAL_VIDEO_URL.match(/youtu\.be\/([^/?&#]+)/);
-  if(mWatch) videoId = mWatch[1];
-  else if(mShort) videoId = mShort[1];
-  else if(mYtBe)  videoId = mYtBe[1];
-
-  if(!videoId) return;
-
-  const isShort = FINAL_VIDEO_URL.includes('/shorts/');
+  const isShort = ytIsShort(FINAL_VIDEO_URL);
   container.style.aspectRatio = isShort ? '9/16' : '16/9';
-
-  container.innerHTML = `<iframe
-    src="https://www.youtube.com/embed/${videoId}?rel=0"
-    style="width:100%;height:100%;border:none"
-    allow="autoplay;encrypted-media"
-    allowfullscreen></iframe>`;
+  container.innerHTML = ytIframe(FINAL_VIDEO_URL);
 }
 
 // ══════════════════════════════════════════════════════════
@@ -1492,6 +1474,12 @@ function ytEmbed(url){
   // Supports: watch?v=, youtu.be/, embed/, shorts/
   const m=url.match(/(?:v=|youtu\.be\/|embed\/|shorts\/)([A-Za-z0-9_-]{11})/);
   return m?`https://www.youtube.com/embed/${m[1]}?rel=0`:url;
+}
+function ytIsShort(url){ return url.includes('/shorts/'); }
+function ytIframe(url, extraClass=''){
+  const isShort = ytIsShort(url);
+  const cls = isShort ? `short ${extraClass}`.trim() : extraClass;
+  return `<iframe src="${ytEmbed(url)}" class="${cls}" allowfullscreen allow="autoplay;encrypted-media"></iframe>`;
 }
 function shuffle(arr){ return [...arr].sort(()=>Math.random()-.5); }
 
@@ -1697,7 +1685,7 @@ function buildReveal(r){
   let media='';
   if(r.mediaType==='image') media=`<div class="reveal-media"><img src="${r.mediaSrc}" loading="lazy" alt=""/></div>`;
   else if(r.mediaType==='video') media=`<div class="reveal-media"><video controls playsinline><source src="${r.mediaSrc}" type="video/mp4"></video></div>`;
-  else if(r.mediaType==='youtube') media=`<div class="reveal-media"><iframe src="${ytEmbed(r.mediaSrc)}" allowfullscreen allow="autoplay;encrypted-media"></iframe></div>`;
+  else if(r.mediaType==='youtube') media=`<div class="reveal-media">${ytIframe(r.mediaSrc)}</div>`;
   const cap=r.mediaCaption?`<div class="reveal-caption">${r.mediaCaption}</div>`:'';
   const text=r.text?`<div class="reveal-text">${r.text}</div>`:'';
   return `<div class="reveal-zone"><span class="reveal-badge">✓ Desbloqueado</span>${text}${media}${cap}</div>`;
@@ -2348,7 +2336,7 @@ function renderPuzzleOverlay(){
     if(r.mediaType==='image' && r.mediaSrc)
       mediaHtml = `<div class="po-reveal-media"><img src="${r.mediaSrc}" loading="lazy"/></div>`;
     else if(r.mediaType==='youtube' && r.mediaSrc)
-      mediaHtml = `<div class="po-reveal-media"><iframe src="${ytEmbed(r.mediaSrc)}" allowfullscreen allow="autoplay;encrypted-media"></iframe></div>`;
+      mediaHtml = `<div class="po-reveal-media">${ytIframe(r.mediaSrc)}</div>`;
     else if(r.mediaType==='video' && r.mediaSrc)
       mediaHtml = `<div class="po-reveal-media"><video controls playsinline><source src="${r.mediaSrc}" type="video/mp4"></video></div>`;
 
